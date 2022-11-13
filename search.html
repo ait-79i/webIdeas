@@ -1,0 +1,60 @@
+/-/<!DOCTYPE html>
+<ht.ml lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>search</title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+			}
+			body {
+				background-color: #2a2734;
+				width: 100%;
+				height: 100%;
+				background-color: #2a2734;
+			}
+			input {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				color: white;
+				font-size: 16px;
+				background-color: transparent;
+				width: 25px;
+				height: 25px;
+				padding: 10px;
+				border: solid 3px #9a86fd;
+				outline: none;
+				border-radius: 35px;
+				transition: all 0.5s;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #9a86fd;
+			}
+			input::placeholder {
+				color: #efefef;
+				opacity: 0;
+				transition: opacity 150ms ease-out;
+			}
+			input:focus::placeholder {
+				opacity: 1;
+			}
+			input:hover {
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #ff8870;
+			}
+			input:hover,
+			input:not(:placeholder-shown) {
+				width: 250px;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #ff8870;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="searsh">
+			<input type="text" placeholder="Search . . . " required />
+		</div>
+	</body>
+</ht.ml>
++
